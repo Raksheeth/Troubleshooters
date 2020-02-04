@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../assets/css/bootstrap/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="../assets/css/styles.css"/>
+        <link rel="stylesheet" href="../assets/css/util.css"/>
+        <script>
+            function showPassword() {
+                var x = document.getElementById("pass");
+                if (x.type === "password") {
+                    x.type = "text";
+                    } else {
+                    x.type = "password";
+                }
+            }
+        </script> 
+    </head>
+    <body>
+        <div class="container-login">
+            <div class="login-form">
+                <form class="login">
+                    <span class="form-title p-b-20 p-t-20">
+						Sign Up
+					</span>
+                    <div class="form-input">
+                        <input class="info-input" type="text" name="username" placeholder="Username" required/>
+                    </div>
+                    <div class="form-input m-b-5">
+                        <input class="info-input" type="password" name="password" id="pass" placeholder="Password" required/>
+                    </div>
+                    <div class="custom-control custom-switch m-b-5">
+                        <input type="checkbox" class="custom-control-input" id="switch1" onclick="showPassword()"/>
+                        <label class="custom-control-label text-light" for="switch1">show password</label>
+                      </div>
+                    <div class="form-input">
+                        <input class="info-input" type="email" name="email" placeholder="Email" required/>
+                    </div>
+                    <div class="form-input">
+                        <input class="info-input" type="tel" name="mobile" placeholder="Mobile number" pattern="[0-9]{10}" required/>
+                    </div>
+                    <div class="form-input">
+                        <input class="info-input" type="text" name="address" placeholder="Address" required/>
+                    </div>
+                    <div class="form-input">
+                        <input class="info-input" type="text" name="state" placeholder="State" required/>
+                    </div>
+                    <div class="form-input">
+                        <input class="info-input" type="text" name="city" placeholder="City" required/>
+                    </div>
+                    <div class="login-button">
+                        <button class="button-input">
+                            Sign Up
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
